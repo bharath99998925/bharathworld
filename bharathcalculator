@@ -1,24 +1,16 @@
-def calculator():
+def addition_calculator():
     try:
         num1 = float(input("Enter the first number: "))
         num2 = float(input("Enter the second number: "))
         
-        addition_result = num1 + num2
-        subtraction_result = num1 - num2
-        multiplication_result = num1 * num2
-        division_result = num1 / num2
-        
-        print(f"The result of {num1} + {num2} is: {addition_result}")
-        print(f"The result of {num1} - {num2} is: {subtraction_result}")
-        print(f"The result of {num1} * {num2} is: {multiplication_result}")
-        print(f"The result of {num1} / {num2} is: {division_result}")
+        result = num1 + num2
+        print(f"The result of {num1} + {num2} is: {result}")
         
     except ValueError:
         print("Invalid input. Please enter valid numbers.")
-    except ZeroDivisionError:
-        print("Cannot divide by zero. Please enter a non-zero second number.")
 
 if __name__ == "__main__":
-    calculator()
+    addition_calculator()
+
 
 
